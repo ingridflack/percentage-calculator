@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/projsec7.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <body>
-    <h1>Percentage Calculator</h1>
-    <p>X is what % of Y?</p>
-    <form id="xIsWhatPercentOfY">
-      <input type="text" id="numField1" /> is what % of
-      <input type="text" id="numField2" />?<br /><br />
-      <input type="submit" value="Calculate" />
-    </form>
-    <h3 id="resultField"></h3>
-    <script type="text/javascript" src="proj_sec7.js"></script>
+    <!-- header -->
+    <div class="row">
+      <div class="col-4 offset-4">
+        <div class="calculator">
+          <header class="calculator-title">
+            <h1>Percentage Calculator</h1>
+          </header>
+
+          <!-- Form -->
+          <form class="calculator-form" id="xIsWhatPercentOfY">
+            <input type="text" id="numField1" placeholder="type a number" />
+            <span>is what % of</span>
+            <input type="text" id="numField2" placeholder="type a number" />
+            <button type="submit" class="btn btn-outline-primary">
+              Calculate
+            </button>
+          </form>
+          <h3 id="resultField"></h3>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/proj_sec7.js"></script>
   </body>
 </html>
